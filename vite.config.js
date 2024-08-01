@@ -19,12 +19,14 @@ export default defineConfig({
       emptyOutDir: true,
       rollupOptions: {
         input: {
+          main: resolve(__dirname, "src/js/main.js"),
+          style:  resolve(__dirname, "src/styles/global.scss"),
           index: resolve(__dirname, "index.html"),
         },
         output: {
-          entryFileNames: `src/[name].js`,
-          chunkFileNames: `src/[name].js`,
-          assetFileNames: `src/[name].[ext]`,
+          entryFileNames: `js/[name].js`,
+          chunkFileNames: `js/[name].js`,
+          assetFileNames: `[name].[ext]`,
         }
       }
   },
