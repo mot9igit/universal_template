@@ -10,8 +10,6 @@ const partDirs = [
 ];
 
 export default defineConfig({
-  root: 'src',
-  base: '',
   plugins: [handlebars({
       partialDirectory: partDirs,
       reloadOnPartialChange: true,
@@ -19,13 +17,15 @@ export default defineConfig({
   build: {
       outDir: 'dist',
       emptyOutDir: true,
-      input: {
-				main: resolve(__dirname, "index.html"),
-			},
-			output: {
-				entryFileNames: `src/[name].js`,
-				chunkFileNames: `src/[name].js`,
-				assetFileNames: `src/[name].[ext]`,
-			},
+      rollupOptions: {
+        input: {
+          index: resolve(__dirname, "index.html"),
+        },
+        output: {
+          entryFileNames: `src/[name].js`,
+          chunkFileNames: `src/[name].js`,
+          assetFileNames: `src/[name].[ext]`,
+        }
+      }
   },
 });
