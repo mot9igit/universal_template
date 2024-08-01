@@ -1,0 +1,860 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DART UNIVERSAL TEMPLATE</title>
+  <link rel="stylesheet" href="styles/global.scss">
+</head>
+
+<body>
+  <div class="dart_wrapper">
+    <header class="dart_header">
+      <div class="header-wrap">
+        <div class="header-top">
+          <div class="container">
+            <div class="dart-row dart-align-items-center">
+              <div class="d-col-sm-6 d-col-8 top-left inliner vam">
+                <div class="phone_block inliner vam">
+                  <i class="iconer iconer-phone"></i>
+                  <a href="tel:89697778544">8 (969) 777-85-44</a>
+                </div>
+                <ul class="top_menu">
+                  <li class="first"><a href="/">Акции</a></li>
+                  <li class="last"><a href="/">Доставка и оплата</a></li>
+                </ul>
+              </div>
+              <div class="d-col-sm-6 d-col-4">
+                <div class="top-sider inliner vam">
+                  <a href="#" class="wrap-link" data-toggle="modal" data-target="#callback">
+                    <span>Служба поддержки</span>
+                    <i class="d_icon d_icon-support"></i>
+                  </a>
+                  <div class="wa">
+                    <a href="whatsapp://send?phone=+79991234567">
+                      <img src="img/wa.svg" alt="whatsapp">
+                    </a>
+                  </div>
+                  <a href="#" class="wrap-link no-wrap">
+                    <i class="d_icon d_icon-account-circle"></i>
+                    <span>Войти</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="container">
+            <div class="dart-row dart-align-items-center">
+              <div class="logo_container d-col-xl-2 d-col-lg-3 d-col-md-4 d-col-6">
+                <div class="logo">
+                  <a href="/">
+                    <img src="/img/logo3.svg" alt="СнегоТехника">
+                  </a>
+                </div>
+              </div>
+              <div class="mobile-menu-button d-col-md-2 d-col-6">
+                <button class="navbar-toggler noactive">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+              <div class="mobile_blocker d-col-md-6 d-col-12">
+                <div>
+                  <a href="tel:89991234567" class="phone">8 (999) 123-45-67</a>
+                  <a href="#" class="dart-btn dart-btn-bordered">Партнерам</a>
+                </div>
+              </div>
+              <div class="d-col-xl-4 d-col-lg-3 d-col-md-6 d-col-4 posr hidden-sm">
+                <div class="header-search-form">
+                  <form data-key="3dd1fbfccc050858f955f7d3f2a34c0af8929a24" action="/" class="msearch2">
+                    <input type="text" name="query" placeholder="Введите фразу для поиска" value=""
+                      class="ui-autocomplete-input" autocomplete="off">
+                    <button type="submit">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="d-col-xl-3 d-col-lg-3 d-col-md-6 d-col-4 posr hidden-sm text-right">
+                <div class="phone_block">
+                  <i class="iconer iconer-phone"></i>
+                  <span class="desc">Ежедневно с 9:00 до 19:00</span>
+                  <a href="tel:89991234567">8 (999) 123-45-67</a>
+                </div>
+              </div>
+              <div class="tools_container d-col-xl-3 d-col-lg-3 d-col-md-12 d-col-12">
+                <div class="right-tools inliner vam">
+                  <div class="compariser">
+                    <div data-id="1" data-list="default" class="comparison-default">
+                      <a href="sravnenie-tovarov.html" data-toggle="tooltip" data-placement="bottom" title=""
+                        data-original-title="Сравнение товаров">
+                        <i class="d_icon d_icon-tune">
+                          <span class="comparison-total">0</span>
+                        </i>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="cart">
+                    <div id="msMiniCart" class="cart full">
+                      <div class="empty">
+                        <a href="cart.html" class="inliner vam">
+                          <span class="carticon">
+                            <i class="d_icon d_icon-cart"></i>
+                            <span class="count ms2_total_count">0</span>
+                          </span>
+                          <div class="cart-info hidden-sm">
+                            <span class="title">Корзина</span>
+                            <span class="info">
+                              <span class="ms2_total_cost">0</span> <i class="fa fa-ruble"></i>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="not_empty">
+                        <a href="cart.html" class="inliner vam">
+                          <span class="carticon">
+                            <i class="d_icon d_icon-cart"></i>
+                            <span class="count ms2_total_count">0</span>
+                          </span>
+                          <div class="cart-info hidden-sm">
+                            <span class="title">Корзина</span>
+                            <span class="info">
+                              <span class="ms2_total_cost">0</span> <i class="fa fa-ruble"></i>
+                            </span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="dart_main">
+      <section class="flyer_menu active">
+        <div class="container">
+          <div class="flyer_menu__content">
+            <div class="mobile-menu-button">
+              <button class="navbar-toggler noactive">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="phone_block">
+              <i class="iconer iconer-phone"></i>
+              <a href="tel:89991234567">8 (999) 123-45-67</a>
+            </div>
+            <div class="cart_block inliner vam">
+              <div class="wa">
+                <a href="whatsapp://send?phone=+79935781533">
+                  <img src="/img/wa.svg" alt="whatsapp" />
+                </a>
+              </div>
+              <div class="compariser">
+                <div data-id="101" data-list="default" class="comparison-default">
+                  <a href="sravnenie-tovarov.html" data-toggle="tooltip" data-placement="bottom" title=""
+                    data-original-title="Сравнение товаров">
+                    <i class="d_icon d_icon-tune">
+                      <span class="comparison-total">0</span>
+                    </i>
+                  </a>
+                </div>
+              </div>
+              <div class="cart">
+                <div id="msMiniCart" class="cart full">
+                  <div class="empty">
+                    <a href="cart.html" class="inliner vam">
+                      <span class="carticon">
+                        <i class="d_icon d_icon-cart"></i>
+                        <span class="count ms2_total_count">0</span>
+                      </span>
+                      <div class="cart-info hidden-sm">
+                        <span class="title">Корзина</span>
+                        <span class="info">
+                          <span class="ms2_total_cost">0</span> <i class="fa fa-ruble"></i>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="not_empty">
+                    <a href="cart.html" class="inliner vam">
+                      <span class="carticon">
+                        <i class="d_icon d_icon-cart"></i>
+                        <span class="count ms2_total_count">0</span>
+                      </span>
+                      <div class="cart-info hidden-sm">
+                        <span class="title">Корзина</span>
+                        <span class="info">
+                          <span class="ms2_total_cost">0</span> <i class="fa fa-ruble"></i>
+                        </span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="navigation">
+        <div class="container">
+          <div class="dart-row">
+            <div class="d-col-md-3 hidden-sm">
+              <div class="catalog_menu">
+                <a href="#">
+                  <span>Каталог </span>
+                  <div class="icon noactive">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <div class="drop_menu">
+                  <div class="sl_side_menu">
+                    <ul class="main_menu_slider">
+                      <li class="first has-children">
+                        <a href="catalog/snegohodi/" class="eqh" style="">
+                          <i class="iconer iconer-sneg"></i>
+                          <span>Снегоходы</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/snegohodi/buran/">Снегоходы по типу Буран</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/arktik/">Снегоходы Арктик</a></li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/shihan/">Снегоходы Шихан</a></li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/berkut/">Снегоходы Беркут</a></li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/burlak/" sngxd_44457="">Снегоходы
+                              Бурлак</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/azimut/">Снегоходы Азимут</a></li>
+                          <li class="submenu_item"><a href="catalog/snegohodi/taiga/">Снегоходы Тайга</a></li>
+                          <li class="submenu_item last"><a href="catalog/snegohodi/irbis/">Снегоходы Ирбис</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/aksessuari/" class="eqh" style="">
+                          <i class="iconer iconer-snegaks"></i>
+                          <span>Аксессуары для снегоходов</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/aksessuari/add-option/">Допы для
+                              снегоходов</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/sani-i-priczepyi/" sngxd_28="">Сани и
+                              прицепы</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/guseniczyi-k-snegoxodam/"
+                              sngxd_2135="">Гусеницы к снегоходам</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/stekla-k-snegoxodam/">Стекла к
+                              снегоходам</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/tracks/">Гусеницы</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/podogrev-ruchek/">Подогрев ручек</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/sklizi/">Склизы для снегоходов</a></li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/chexli/" sngxd_3048="">Чехлы для
+                              снегоходов</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/aksessuari/sidenia/">Сиденья для снегоходов</a></li>
+                          <li class="submenu_item"><a
+                              href="catalog/aksessuari/aksessuaryi-dlya-motobuksirovshhikov/">Для
+                              мотобуксировщиков Бурлак</a></li>
+                          <li class="submenu_item"><a
+                              href="catalog/aksessuari/dlya-motobuksirovshhikov-snegotexnika/">Для
+                              мотобуксировщиков СнегоТехника</a></li>
+                          <li class="submenu_item last"><a href="catalog/aksessuari/dopolnitelnyie-opczii/">Аксессуары
+                              для
+                              БТС</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="catalog/guseniczyi-dlya-motobloka/" class="eqh" style="">
+                          <i class="iconer iconer-gus"></i>
+                          <span>Гусеницы для мотоблока</span>
+                        </a>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/motobuksirovshhiki/" class="eqh" style="">
+                          <i class="iconer iconer-motob"></i>
+                          <span>Мотобуксировщики</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/motobuksirovshhiki/bts/">БТС</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/azimut/">Азимут</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/veps/">Вепс</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/rubin/">Рубин</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/kayur/">Каюр</a></li>
+                          <li class="submenu_item"><a
+                              href="catalog/motobuksirovshhiki/minisnegoxodyi/">Миниснегоходы</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/burlak/" sngxd_32="">Бурлак</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/snegotehnika/">СнегоТехника</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/paxus/">Paxus</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/albatros/">Альбатрос</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/motodog/">MOTODOG</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/xaski/">Хаски</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/izhtexmash/">Лидер</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/onego/">Онего</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/norka/">Норка</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/forza/">Форза</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/baltmotors/">Baltmotors</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/koira/">Койра</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/irbis/">Ирбис</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/muzhik/">Мужик</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/pomor/">Помор</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/reks/">Рекс</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/chinuk/">Чинук</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/dzhek/">Джек</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/shhukar/">Щукарь</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/neva/">Нева</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/rostin/">Ростин</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/razgulyai/">Разгуляй</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/uragan/">Ураган</a></li>
+                          <li class="submenu_item"><a href="catalog/motobuksirovshhiki/sharmax/">Sharmax</a></li>
+                          <li class="submenu_item last"><a href="catalog/motobuksirovshhiki/bars/">Барс</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/zapchasti-na-motobuksirovshhik/" class="eqh" style="">
+                          <i class="iconer iconer-zap_mot"></i>
+                          <span>Запчасти для мотобуксировщиков</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/zapchasti-na-motobuksirovshhik/podveska/"
+                              sp_b_166="">Подвеска</a></li>
+                          <li class="submenu_item"><a
+                              href="catalog/zapchasti-na-motobuksirovshhik/zapchasti-dlya-ramyi/" sp_b_167="">Запчасти
+                              для рамы</a></li>
+                          <li class="submenu_item"><a href="catalog/zapchasti-na-motobuksirovshhik/transmissiya/"
+                              sp_b_169="">Трансмиссия</a></li>
+                          <li class="submenu_item"><a href="catalog/zapchasti-na-motobuksirovshhik/upravlenie-rulevoe/"
+                              sp_b_170="">Управление рулевое</a></li>
+                          <li class="submenu_item"><a href="catalog/zapchasti-na-motobuksirovshhik/elektrooborudovanie/"
+                              sp_b_171="">Электрооборудование</a></li>
+                          <li class="submenu_item"><a href="catalog/zapchasti-na-motobuksirovshhik/variatoryi-safari/"
+                              sp_b_25549="">Вариаторы Сафари</a></li>
+                          <li class="submenu_item last"><a href="catalog/zapchasti-na-motobuksirovshhik/guseniczyi/"
+                              sp_b_25567="">Гусеницы для мотобуксировщика</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/repair/" class="eqh" style="">
+                          <i class="iconer iconer-zap_sneg"></i>
+                          <span>Запчасти для снегоходов</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/repair/buran-a/">Запчасти Буран</a></li>
+                          <li class="submenu_item"><a href="catalog/repair/tracks-buran/">Гусеницы Буран</a></li>
+                          <li class="submenu_item"><a href="catalog/repair/dvigateli-buran/">Двигатели для снегохода
+                              Буран</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/repair/buran/">Запчасти Буран Русская Механика</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/repair/zapchasti-tajga/">Запчасти Тайга</a></li>
+                          <li class="submenu_item last"><a href="catalog/repair/dvigateli-taiga/">Двигатели для
+                              снегохода
+                              Тайга</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/sadovaya-tehnika/" class="eqh" style="">
+                          <i class="iconer iconer-sad"></i>
+                          <span>Садовая техника</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a
+                              href="catalog/sadovaya-tehnika/motokultivatoryi/">Мотокультиваторы</a></li>
+                          <li class="submenu_item"><a href="catalog/sadovaya-tehnika/motobloki/">Мотоблоки</a></li>
+                          <li class="submenu_item"><a href="catalog/sadovaya-tehnika/navesnoe-oborudovanie/">Навесное
+                              оборудование</a></li>
+                          <li class="submenu_item last"><a
+                              href="catalog/sadovaya-tehnika/snegouborshiki/">Снегоуборщики</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/kvadrocikli/" class="eqh" style="">
+                          <i class="iconer iconer-kvadro"></i>
+                          <span>Квадроциклы</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/kvadrocikli/rm/">Квадроциклы РМ</a></li>
+                          <li class="submenu_item last"><a href="catalog/kvadrocikli/motax/">Квадроциклы Motax</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="catalog/vezdehody/" class="eqh" style="">
+                          <i class="iconer iconer-vezd"></i>
+                          <span>Вездеходы</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="catalog/pogruzchiki/" class="eqh" style="">
+                          <i class="iconer iconer-sad"></i>
+                          <span>Погрузчики</span>
+                        </a>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/vodomotorika/" class="eqh" style="">
+                          <i class="iconer iconer-aero"></i>
+                          <span>Водомоторика</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/vodomotorika/bolotohod/"
+                              sngxd_27852="">Болотоходы</a></li>
+                          <li class="submenu_item"><a href="catalog/vodomotorika/aerolodki/">Аэролодки</a></li>
+                          <li class="submenu_item last"><a href="catalog/vodomotorika/grebnye-lodki/">Гребные лодки</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/lifan/" class="eqh" style="">
+                          <i class="iconer iconer-lifan"></i>
+                          <span>Lifan</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/lifan/dvigateli-lifan/" lifan_20="">Двигатели
+                              Lifan</a></li>
+                          <li class="submenu_item"><a href="catalog/lifan/generatoryi-lifan/" lifan_21="">Генераторы
+                              Lifan</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/lifan/mojki-vyisokogo-davleniya-lifan/"
+                              lifan_113="">Мойки
+                              высокого давления Lifan</a></li>
+                          <li class="submenu_item"><a href="catalog/lifan/motopompyi-lifan/" lifan_105="">Мотопомпы
+                              Lifan</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/lifan/zapchasti-lifan/" lifan_106="">Запчасти
+                              Lifan</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/lifan/masla-lifan/" lifan_153="">Масла LIFAN</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/lifan/produkcziya-partnerov/" lifan_140="">Продукция
+                              партнеров</a></li>
+                          <li class="submenu_item"><a href="catalog/lifan/vibroplityi-lifan/" lifan_262="">Виброплиты
+                              Lifan</a></li>
+                          <li class="submenu_item last"><a href="catalog/lifan/tovaryi-s-uczenkoj/" lifan_158="">Товары
+                              с
+                              уценкой</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="catalog/habert/" class="eqh" style="">
+                          <i class="iconer iconer-habert"></i>
+                          <span>Habert</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/habert/benzopilyi/"
+                              habert_188="">Бензопилы</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/gazonokosilki/"
+                              habert_201="">Газонокосилки</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/habert/dvigateli/" habert_189="">Двигатели</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/generatoryi/" habert_202="">Генераторы</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/habert/mashinyi-podmetalno-uborochnyie/"
+                              habert_190="">Машины подметально-уборочные</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/motobloki/" habert_191="">Мотоблоки</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/motoburyi/" habert_192="">Мотобуры</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/snegouborshhiki/"
+                              habert_193="">Снегоуборочные
+                              машины</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/trimmeryi/" habert_194="">Триммеры</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/lebedki-elektricheskie/"
+                              habert_216="">Лебедки
+                              электрические</a></li>
+                          <li class="submenu_item"><a href="catalog/habert/zapchasti-habert/" habert_219="">Запчасти
+                              Habert</a></li>
+                          <li class="submenu_item last"><a href="catalog/habert/stroitelnaya-texnika/"
+                              habert_233="">Строительная техника</a></li>
+                        </ul>
+                      </li>
+                      <li class="last has-children">
+                        <a href="catalog/loncin/" class="eqh" style="">
+                          <i class="iconer iconer-lonchin"></i>
+                          <span>Loncin</span>
+                        </a>
+                        <ul class="column-1">
+                          <li class="submenu_item first"><a href="catalog/loncin/generatoryi/"
+                              loncin_38="">Генераторы</a>
+                          </li>
+                          <li class="submenu_item"><a href="catalog/loncin/dvigateli/" loncin_39="">Двигатели</a></li>
+                          <li class="submenu_item"><a href="catalog/loncin/motopompyi/" loncin_167="">Мотопомпы</a></li>
+                          <li class="submenu_item"><a href="catalog/loncin/motoryi-lodochnyie/" loncin_200="">Моторы
+                              лодочные</a></li>
+                          <li class="submenu_item"><a href="catalog/loncin/zapchasti/" loncin_46="">Запчасти</a></li>
+                          <li class="submenu_item"><a href="catalog/loncin/masla/" loncin_207="">Масла</a></li>
+                          <li class="submenu_item last"><a href="catalog/loncin/lebedki-elektricheskie/"
+                              loncin_215="">Лебедки
+                              электрические</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-col-md-9">
+              <div class="navs-block hidden-sm">
+                <ul class="navs">
+                  <li class="first"><a href="sposoby-oplaty.html">Оплата</a></li>
+                  <li><a href="delivery/">Доставка</a></li>
+                  <li><a href="contact.html">Контакты</a></li>
+                  <li class="active"><a href="about/">О компании</a></li>
+                  <li><a href="blog/">Блог</a></li>                  
+                </ul>
+                <ul class="visible">
+                  <li><a href="#">Купить оптом</a></li>
+                  <li><a href="#">Купить в рассрочку</a></li>
+                </ul>
+              </div>
+              
+              <div class="main_slide owl-carousel off">
+                <div class="item" data-index="0">
+                  <a href="#"> 
+                    <img
+                      src="/img/slider/buran-05.jpg"
+                      alt=""/>
+                  </a>
+                </div>
+                <div class="item" data-index="1">
+                  <a href="#">
+                    <picture>
+                      <source media="(max-width: 1199px)"
+                        srcset="/img/slider/artic-oblozhka-1.jpg">
+                      <source media="(min-width: 1200px)"
+                        srcset="/img/slider/artic-oblozhka-1.jpg">
+                      <img
+                        src="/img/slider/artic-oblozhka-1.jpg"
+                        alt=""/>
+                    </picture>
+                  </a>
+                </div>
+                <div class="item" data-index="2">
+                  <a href="#">
+                    <picture>
+                      <source media="(max-width: 1199px)"
+                        srcset="/img/slider/shixan-02.jpg">
+                      <source media="(min-width: 1200px)"
+                        srcset="/img/slider/shixan-02.jpg">
+                      <img
+                        src="/img/slider/shixan-02.jpg"
+                        alt=""/>
+                    </picture>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- actions -->
+      <section class="def-section">
+        <div class="container">
+          <div class="def-section__header">
+            <span class="h2">Наши акции</span>
+            <div class="hidden-sm">
+              <a href="#" class="dart-btn dart-btn-primary">
+                <span>Больше акций</span>
+                <i class="d_icon d_icon-arrow"></i>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="container mobile_full">
+          <div class="actions-row mobile_scroll_wrap">
+            <div class="dart-row mobile_scroll mobile_scroll_block_300">
+              <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+               <!-- item -->
+              <div class="d-col-md-3">
+                <a href="#" class="actions-item">
+                  <div class="actions-item__img">
+                    <img src="/img/actions/10990290.jpg" alt="">
+                  </div>
+                  <div class="actions-item__text">
+                    <div>
+                      <span class="actions-item__title">5000 ₽ НА КАРТУ</span>
+                      <p>Приведите друга и получи деньги</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- / item -->
+            </div>            
+          </div>
+        </div>
+        <div class="container visible-sm">
+          <div class="dart-mt-2 visible-phones text-center">
+            <a href="#" class="dart-btn dart-btn-primary">
+              <span>Больше акций</span>
+              <i class="d_icon d_icon-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- / actions -->
+      <!-- catalog -->
+      <section class="def-section">
+        <div class="container">
+          <div class="def-section__header">
+            <span class="h2">Наши акции</span>
+            <div class="hidden-sm">
+              <a href="#" class="dart-btn dart-btn-primary">
+                <span>Больше акций</span>
+                <i class="d_icon d_icon-arrow"></i>
+              </a>
+            </div>            
+          </div>
+        </div>
+        <div class="container">
+          <div class="catalog-list">
+            <div class="dart-row">
+              <!-- item -->
+              <div class="col-md-3">
+                <div class="item">
+
+                </div>
+              </div>              
+              <!-- / item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- / catalog -->
+    </div>
+    <footer class="dart_footer">
+      <div class="container">
+        <div class="dart-row">
+          <div class="footer-block d-col-lg-3 d-col-md-6 d-col-sm-6">
+            <a href="#" class="footer-logo">
+              <img src="/img/logo-fff.png" alt="СнегоТехника">
+            </a>
+            <ul class="contacts">
+              <li itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+                <i class="fa fa-map-marker"></i>
+                <div>
+                  <b>Адрес</b><br>
+                  <span><span itemprop="postalCode">152900</span>, Россия, <span itemprop="addressLocality">Ярославская
+                      область, г. Рыбинск, Зачерёмушный район</span>, <span itemprop="streetAddress">ул. Орджоникидзе,
+                      33</span></span>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <div>
+                  <b>Телефон:</b><br><span>8 (969) 777-85-44</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <div>
+                  <i class="fa fa-envelope"></i>
+                  <b>E-mail</b><br><span>info@snegotehnika.ru</span>
+                </div>
+              </li>
+            </ul>
+            <ul class="socials">
+              <li>
+                <a href="https://vk.com/snegotehnika" target="_blank">
+                  <i class="fa fa-vk"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCSwKziqng1Y97l0M_bMt15A" target="_blank">
+                  <i class="fa fa-youtube-play"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://ok.ru/group/64249274302719" target="_blank">
+                  <i class="fa fa-odnoklassniki"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-block d-col-lg-3 d-col-md-6 d-col-sm-6">
+            <div class="footer-menu">
+              <span class="sf_title">Каталог</span>
+              <ul class="">
+                <li class="first"><a href="catalog/snegohodi/">Снегоходы</a></li>
+                <li><a href="catalog/aksessuari/">Аксессуары для снегоходов</a></li>
+                <li><a href="catalog/guseniczyi-dlya-motobloka/">Гусеницы для мотоблока</a></li>
+                <li><a href="catalog/motobuksirovshhiki/">Мотобуксировщики</a></li>
+                <li><a href="catalog/zapchasti-na-motobuksirovshhik/">Запчасти для мотобуксировщиков</a></li>
+                <li><a href="catalog/repair/">Запчасти для снегоходов</a></li>
+                <li><a href="catalog/sadovaya-tehnika/">Садовая техника</a></li>
+                <li><a href="catalog/kvadrocikli/">Квадроциклы</a></li>
+                <li><a href="catalog/vezdehody/" sngxd_27788="">Вездеходы</a></li>
+                <li class="last"><a href="catalog/pogruzchiki/">Погрузчики</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-block d-col-lg-3 d-col-md-6 d-col-sm-6">
+            <div class="footer-menu">
+              <span class="sf_title">Покупателям</span>
+              <ul class="">
+                <li class="first"><a href="5000-podarok.html">5000 рублей в подарок</a></li>
+                <li class="last"><a href="snegohod-buran-optom.html">Снегоходы c завода</a></li>
+              </ul> <span class="sf_title">
+                <div class="badge__form">
+                  <ul>
+                    <li><a
+                        href="https://yandex.ru/maps/org/snegotekhnika/126289223109/reviews?utm_source=maps-reviews-widget&amp;utm_medium=reviews&amp;utm_content=add_review&amp;add-review"
+                        class="badge__link-to-map" target="_blank">Оставить отзыв</a></li>
+                  </ul>
+                </div>
+              </span>
+              <iframe src="https://yandex.ru/sprav/widget/rating-badge/126289223109" width="150" height="50"
+                frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="footer-block d-col-lg-3 d-col-md-6 d-col-sm-6">
+            <div class="footer-menu">
+              <span class="sf_title">Информация</span>
+              <ul class="">
+                <li class="first"><a href="contact.html">Контакты</a></li>
+                <li class="active"><a href="about/">О компании</a></li>
+                <li><a href="dogovor-publichnoj-ofertyi.html">Договор публичной оферты</a></li>
+                <li><a href="blog/">Инструкции по ремонту</a></li>
+                <li class="last"><a
+                    href="blog/snegoxodyi-buran/37158-otlichiya-kit-komplekt-ot-snegohoda-buran-rm.html">Чем
+                    отличается Кит комплект от "Снегохода Буран" Русская Механика</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-block col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-menu">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            <noindex>
+            </noindex>
+          </p>
+          <div class="copyright">© 2024 «Снеготехника». Все права защищены
+            <br>Запчасти и аксессуары для снегоходной техники | Тел: 8 (969) 777-85-44
+          </div>
+
+          <p></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://kit.fontawesome.com/468088342b.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

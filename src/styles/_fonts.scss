@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8splrw');
+  src:  url('../fonts/icomoon.eot?8splrw#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8splrw') format('truetype'),
+    url('../fonts/icomoon.woff?8splrw') format('woff'),
+    url('../fonts/icomoon.svg?8splrw#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="d_icon-"], [class*=" d_icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.d_icon-bars:before {
+  content: "\e92f";
+}
+.d_icon-arrow:before {
+  content: "\e931";
+}
+.d_icon-shop:before {
+  content: "\e932";
+}
+.d_icon-support:before {
+  content: "\e933";
+}
+.d_icon-tag:before {
+  content: "\e92b";
+}
+.d_icon-grade:before {
+  content: "\e92c";
+}
+.d_icon-key:before {
+  content: "\e92d";
+}
+.d_icon-star:before {
+  content: "\e92e";
+}
+.d_icon-house:before {
+  content: "\e92a";
+}
+.d_icon-acute:before {
+  content: "\e929";
+}
+.d_icon-account-circle:before {
+  content: "\e90a";
+}
+.d_icon-map:before {
+  content: "\e90c";
+}
+.d_icon-trash:before {
+  content: "\e90b";
+}
+.d_icon-user-alt:before {
+  content: "\e90d";
+}
+.d_icon-credit-card:before {
+  content: "\e90e";
+}
+.d_icon-tooltip-question:before {
+  content: "\e90f";
+}
+.d_icon-human-queue:before {
+  content: "\e910";
+}
+.d_icon-archive:before {
+  content: "\e911";
+}
+.d_icon-analytics:before {
+  content: "\e912";
+}
+.d_icon-truck:before {
+  content: "\e913";
+}
+.d_icon-file-document:before {
+  content: "\e914";
+}
+.d_icon-list-bulleted:before {
+  content: "\e915";
+}
+.d_icon-cog:before {
+  content: "\e916";
+}
+.d_icon-account:before {
+  content: "\e917";
+}
+.d_icon-cart:before {
+  content: "\e918";
+}
+.d_icon-tune:before {
+  content: "\e919";
+}
+.d_icon-phone:before {
+  content: "\e91a";
+}
+.d_icon-search:before {
+  content: "\e91b";
+}
+.d_icon-map-marker:before {
+  content: "\e91c";
+}
+.d_icon-angle-right:before {
+  content: "\e91d";
+}
+.d_icon-angle-left:before {
+  content: "\e91e";
+}
+.d_icon-catalog:before {
+  content: "\e91f";
+}
+.d_icon-close:before {
+  content: "\e920";
+}
+.d_icon-home:before {
+  content: "\e921";
+}
+.d_icon-angle-down:before {
+  content: "\e922";
+}
+.d_icon-sort:before {
+  content: "\e923";
+}
+.d_icon-filter:before {
+  content: "\e924";
+}
+.d_icon-play:before {
+  content: "\e925";
+}
+.d_icon-clock:before {
+  content: "\e926";
+}
+.d_icon-view-agenda:before {
+  content: "\e927";
+}
+.d_icon-view-grid:before {
+  content: "\e928";
+}
+.d_icon-envelope:before {
+  content: "\e900";
+}
+.d_icon-heart:before {
+  content: "\e901";
+}
+.d_icon-tech:before {
+  content: "\e902";
+}
+.d_icon-thumbs-up:before {
+  content: "\e903";
+}
+.d_icon-proud:before {
+  content: "\e904";
+}
+.d_icon-ambulance:before {
+  content: "\e905";
+}
+.d_icon-hands:before {
+  content: "\e906";
+}
+.d_icon-users:before {
+  content: "\e907";
+}
+.d_icon-global:before {
+  content: "\e908";
+}
+
+.d_icon-share:before {
+  content: "\e909";
+}
+
+
+.iconer.iconer-phone {
+  width: 28px;
+  height: 28px;
+  background: url(/img/icons/phone.svg) no-repeat
+}
+
+.iconer.iconer-vezd {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/vezd.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-gus {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/gus.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-zap_mot {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/zap_mot.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-zap_sneg {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/zap_sneg.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-zap_sneg {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/zap_sneg.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-zap_els {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/zap_els.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-mot {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/mot.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-motob {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/motob.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-sad {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/sad.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-sneg {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/sneg.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-eles {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/eles.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-snegaks {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/sneg-aks.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-lifan {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/lifan.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-habert {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/habert.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-lonchin {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/lonchin.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-about {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/about.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-blog {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/blog.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-cat {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/cat.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-cont {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/cont.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-delivery {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/delivery.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-pay {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/pay.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-opt {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/opt.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-aero {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/aero.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-kvadro {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/kvadro.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-lodka {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/lodka.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}
+
+.iconer.iconer-lodka {
+  width: 32px;
+  height: 32px;
+  background: url(/img/icons/lodka.svg) no-repeat;
+  background-size: contain;
+  background-position: center center
+}

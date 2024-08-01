@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64px" height="64px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6400 6400"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str3 {stroke:#FFAB1D;stroke-width:259.728}
+    .str0 {stroke:#FFAB1D;stroke-width:259.846}
+    .str1 {stroke:#FFAB1D;stroke-width:259.846}
+    .str2 {stroke:#FFAB1D;stroke-width:259.846}
+    .str7 {stroke:#FFAB1D;stroke-width:259.964}
+    .str6 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round}
+    .str5 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round}
+    .str4 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+    .fil1 {fill:#FFE5BD}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2199645556528">
+   <rect class="fil0" width="6400" height="6400"/>
+   <path class="fil0 str0" d="M5871 3093l0 -962c0,-281 -230,-510 -511,-510l-4719 0c-281,0 -510,229 -510,510l0 3627c0,281 229,511 510,511l4719 0c281,0 511,-230 511,-511l0 -961"/>
+   <path class="fil0 str1" d="M6058 3093l-1252 0c-468,0 -852,383 -852,852l0 0c0,468 383,852 852,852l1252 0c116,0 211,-95 211,-210l0 -1284c0,-116 -96,-210 -211,-210z"/>
+   <path class="fil1 str2" d="M4840 3567c210,0 379,169 379,378 0,209 -169,378 -379,378 -209,0 -378,-169 -378,-378 0,-209 169,-378 378,-378z"/>
+   <circle class="fil1 str3" cx="2038" cy="2038" r="1907"/>
+   <path class="fil0 str4" d="M1767 2081l0 -767m-245 0l833 0c211,0 384,173 384,384l0 0c0,210 -174,383 -384,383l-833 0"/>
+   <line class="fil0 str5" x1="1767" y1="2081" x2="1767" y2= "2762" />
+   <line class="fil0 str6" x1="1522" y1="2496" x2="2011" y2= "2496" />
+   <circle class="fil0 str7" cx="2038" cy="2038" r="1406"/>
+  </g>
+ </g>
+</svg>

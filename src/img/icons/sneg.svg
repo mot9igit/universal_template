@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="64px" height="64px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6400 6400"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str4 {stroke:#FFAB1D;stroke-width:259.846}
+    .str2 {stroke:#FFAB1D;stroke-width:259.846}
+    .str1 {stroke:#FFAB1D;stroke-width:259.846}
+    .str6 {stroke:#FFAB1D;stroke-width:259.846;stroke-linejoin:round}
+    .str8 {stroke:#FFAB1D;stroke-width:259.846;stroke-linejoin:round}
+    .str5 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round}
+    .str7 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round;stroke-linejoin:round}
+    .str0 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round;stroke-linejoin:round}
+    .str3 {stroke:#FFAB1D;stroke-width:259.846;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+    .fil1 {fill:#FFAB1D}
+    .fil2 {fill:#FFE5BD}
+    .fil3 {fill:#FFAB1D;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2140487478832">
+   <rect class="fil0" width="6400" height="6400"/>
+   <rect class="fil0" width="6400" height="6400"/>
+   <path class="fil0 str0" d="M694 5521l2506 0m-337 -1540l-1605 0 -868 501"/>
+   <path class="fil0 str1" d="M2061 4456c-163,0 -295,132 -295,295 0,163 132,295 295,295 163,0 295,-132 295,-295 0,-163 -132,-295 -295,-295z"/>
+   <path class="fil0 str2" d="M694 5521c-311,0 -563,-252 -563,-564 0,-311 252,-564 563,-564 312,0 564,253 564,564 0,312 -252,564 -564,564z"/>
+   <path class="fil0 str3" d="M3426 5521l-2168 0m0 -1540l1605 0 867 501"/>
+   <path class="fil1" d="M694 4806c84,0 151,68 151,151 0,83 -67,151 -151,151 -83,0 -150,-68 -150,-151 0,-83 67,-151 150,-151z"/>
+   <path class="fil0 str4" d="M3426 5521c312,0 564,-252 564,-564 0,-311 -252,-564 -564,-564 -311,0 -564,253 -564,564 0,312 253,564 564,564z"/>
+   <path class="fil1" d="M3426 4806c-83,0 -151,68 -151,151 0,83 68,151 151,151 84,0 151,-68 151,-151 0,-83 -67,-151 -151,-151z"/>
+   <line class="fil0 str5" x1="4435" y1="5521" x2="5706" y2= "5521" />
+   <path class="fil0 str5" d="M6269 4957c0,312 -252,564 -563,564l-925 -1540"/>
+   <path class="fil2" d="M3200 2980l-1736 -471 -1333 0 0 854 1127 618 1604 0 1919 0c1070,0 1488,-376 1488,-1001l-3069 0z"/>
+   <g>
+    <path class="fil3" d="M1464 2639l-1333 0 0 -260 1333 0 34 4 -34 256zm0 -260c72,0 130,58 130,130 0,72 -58,130 -130,130l0 -260zm1702 727l-1736 -472 68 -251 1736 472 -34 255 -34 -4zm68 -251c69,18 110,90 91,159 -19,69 -90,110 -159,92l68 -251zm3035 255l-3069 0 0 -260 3069 0 130 130 -130 130zm0 -260c72,0 130,58 130,130 0,72 -58,130 -130,130l0 -260zm-1488 1261l0 -260 0 0 95 -1 92 -3 87 -5 84 -8 80 -9 76 -11 72 -13 68 -15 65 -17 60 -18 58 -20 53 -21 50 -23 47 -25 43 -26 40 -27 37 -28 33 -30 31 -31 29 -32 26 -33 23 -35 21 -36 18 -38 17 -40 14 -41 12 -43 10 -44 8 -47 6 -49 3 -50 1 -52 259 0 -1 64 -4 62 -7 61 -11 60 -12 59 -17 57 -19 56 -23 55 -26 53 -29 51 -33 49 -37 47 -39 45 -43 43 -47 40 -49 38 -53 36 -55 33 -59 31 -62 28 -65 26 -68 24 -71 22 -74 19 -78 17 -81 14 -83 13 -88 10 -91 8 -94 5 -98 4 -101 1 0 0zm0 0c-71,0 -129,-58 -129,-130 0,-72 58,-130 129,-130l0 260zm-3523 -260l3523 0 0 260 -3523 0 -62 -16 62 -244zm0 260c-71,0 -129,-58 -129,-130 0,-72 58,-130 129,-130l0 260zm-1065 -862l1127 618 -124 228 -1127 -618 -68 -114 192 -114zm-124 228c-63,-35 -86,-114 -52,-177 34,-62 113,-86 176,-51l-124 228zm191 -968l0 854 -259 0 0 -854 130 -130 129 130zm-259 0c0,-72 58,-130 130,-130 71,0 129,58 129,130l-259 0z"/>
+   </g>
+   <polyline class="fil0 str6" points="3200,2980 4781,1707 6269,2451 6269,2980 "/>
+   <polyline class="fil0 str7" points="4781,1707 3200,879 3200,1350 3990,2241 "/>
+   <polyline class="fil0 str8" points="131,2509 131,879 759,879 1464,2509 "/>
+  </g>
+ </g>
+</svg>
