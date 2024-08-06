@@ -14,6 +14,9 @@ export default defineConfig({
       partialDirectory: partDirs,
       reloadOnPartialChange: true,
   })],
+  server: {
+
+  },
   build: {
       outDir: 'dist',
       emptyOutDir: true,

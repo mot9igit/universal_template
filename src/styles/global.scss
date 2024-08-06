@@ -52,6 +52,15 @@
   }
 }
 
+.button-with-desc{
+  .desc{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
 .def-section {
   padding: 30px 0;
   overflow: hidden;
@@ -172,6 +181,144 @@
   }
 }
 
+.label{
+  display: inline-block;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  background: transparent;
+  color: #343434;
+  & + .label{
+    margin-left: 5px;
+  }
+  &.label-grey{
+    background: #dadada;
+  }
+  &.label-green{
+    background: #4cae4c;
+    color: #fff;
+  }
+  &.label-red{
+    background: #fb3343;
+    color: #fff;
+  }
+  &.label-blue{
+    background: #1586d8;
+    color: #fff;
+  }
+}
+
+.catalog-item{
+  position: relative;
+  margin-bottom: 30px;
+  border: 1px solid transparent;    
+  padding: 15px 0 110px;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all .2s ease;
+  border-radius: 10px;
+  height: calc(100% - 30px);
+  &.with-price{
+    padding-bottom: 165px !important;
+  }
+  &__labels{
+    padding: 0 15px 15px;
+  }
+  &__image{
+    padding: 0 15px;
+    img{
+      display: block;
+      border-radius: 10px;
+    }
+  }
+  &__text{
+    padding: 15px 15px;
+    a{
+      font-size: 18px;
+      font-weight: bold;
+      display: block;
+      text-decoration: none;
+      & + *{
+        margin-top: 15px;
+      }
+    }
+  }
+  &__prices-block {  
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-bottom: 15px;
+    & .old_price{
+      text-decoration: line-through;
+      color: #7E7E7E;
+      font-weight: 600;
+      font-size: 16px;
+      text-decoration-color: #343434;
+      & + .price{
+        color: #ff0000;
+      }
+    }
+    & .price{
+      color: #343434;
+      font-weight: 600;
+      font-size: 22px;
+    }
+  }
+  &__characters{
+    position: relative;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    padding: 10px 10px;
+    & + *{
+      margin-top: 15px;
+    }
+    .char-item {
+      position: relative;
+      font-size: 12px;
+      text-align: justify;
+      margin-bottom: -16px; 
+      &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 0; 
+      }
+      &::after {
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block; 
+      }
+      .label {
+        color: #464b52;
+        display: inline-block; 
+      }
+      .value {
+        color: #1586d8;
+        display: inline-block; 
+      }
+    }
+  }
+  &__buttons{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    a{
+      display: block;
+      width: 100%;
+      text-align: center;
+      & + .desc{
+        margin: 0;
+      }
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .actions-item__text p{
     display: block;
@@ -181,5 +328,56 @@
 @media (max-width: $big-phones) {
   .def-section__header div{
     display: none;
+  }
+  .catalog-list{
+    .dart-row{
+      & > *{
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+      }
+      .dart-btn{
+        padding: 7px 10px;
+      }
+      .catalog-item{
+        padding-bottom: 120px;
+        height: calc(100% - 5px);
+        margin-bottom: 5px;
+        &.with-price{
+          padding-bottom: 135px !important;
+        }
+        .catalog-item__labels{
+          padding: 0 5px 15px;
+          white-space: nowrap;
+          overflow-x: auto;
+        }
+        .catalog-item__image{
+          padding: 0 5px 15px;
+        }
+        .catalog-item__text{
+          padding: 0 5px 15px;
+          .catalog-item__characters{
+            display: none;
+          }
+          .catalog-item__buttons a {
+            font-size: 14px;
+          }
+        }
+        .label{
+          font-size: 12px;
+        }
+        p{
+          font-size: 14px;
+        }
+        .catalog-item__prices-block .price{
+          font-size: 16px;
+          display: block;
+        }
+        .catalog-item__prices-block .old_price{
+          font-size: 14px;
+          display: block;
+        }
+      }
+    }
+
   }
 }
