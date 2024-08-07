@@ -1,3 +1,48 @@
+@-webkit-keyframes spinner {
+  from {
+    transform: rotate(360deg); 
+	}
+  to {
+    transform: rotate(0deg); 
+	} 
+}
+@keyframes spinner {
+  from {
+    transform: rotate(360deg); 
+	}
+  to {
+    transform: rotate(0deg); 
+	} 
+}
+
+@-webkit-keyframes slideme {
+	0% {
+			left: 10%;
+	}
+
+	30% {
+			left: 110%;
+	}
+
+	100% {
+			left: 110%;
+	}
+}
+
+@keyframes slideme {
+	0% {
+			left: 10%;
+	}
+
+	30% {
+			left: 110%;
+	}
+
+	100% {
+			left: 110%;
+	}
+}
+
 html,
 body {
 	min-height: 100% !important;

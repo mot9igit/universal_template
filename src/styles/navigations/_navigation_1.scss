@@ -1,11 +1,21 @@
 .navigation {
   background: transparent;
+  position: relative;
+  z-index: 3;
   margin: 15px 0;
   .catalog_menu {
     position: relative;
     line-height: 1;
-    &.main a {
-      border-radius: 8px 8px 0 0
+    &.main {
+      a {
+        border-radius: 8px 8px 0 0
+      }
+    }    
+    .drop_menu {
+      position: absolute;
+      display: none;
+      top: 100%;
+      width: 100%;
     }
     & > a {
       color: #fff;
@@ -119,9 +129,6 @@
   box-shadow: 0 0 20px 5px rgba(0,0,0,.1);
   border-radius: 0 0 8px 8px;
   margin-bottom: 30px;
-  &.main {
-    margin-top: -15px
-  }
   & > ul {
     list-style-type: none;
     padding: 0;
