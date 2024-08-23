@@ -303,6 +303,17 @@ header {
     }
     .right-tools {
       text-align: right;
+      .phone{
+        font-size: 16px;
+        font-weight: bold;
+        display: none;
+        & + *{
+          margin-left: 10px;
+        }
+        a{
+          text-decoration: none;
+        }
+      }
       .compariser {
         position: relative;
         margin-right: 15px;
@@ -435,8 +446,8 @@ header {
   i{
     display: inline-block;
     vertical-align: middle;
-    color: #343434;
-    font-size: 26px;
+    color: #343434 !important;
+    font-size: 26px !important;
     & + span{
       margin-left: 5px;   
     }
@@ -589,12 +600,13 @@ header {
 }
 .navbar-toggler {
   position: relative;
-  background: transparent;
+  background: $primary-color;
   border: none;
+  border-radius: 5px;
   padding: 5px 12px;
   span {
     display: block;
-    background-color: #333;
+    background-color: #FFF;
     height: 3px;
     border-radius: 3px;
     width: 25px;
@@ -653,16 +665,26 @@ header {
   .flyer_menu{
     display: none !important;
   }
+  header .header-bottom .logo {
+    text-align: center;
+    margin: 0 0;
+  }
   header{
     box-shadow: none;
     background: transparent;
     .header-top{
       display: none;
     }
+    .header-bottom{
+      .logo_container{
+        order: 1;
+        .logo{
+          text-align: left;
+        }    
+      }
+    }    
   }
-  .logo_container{
-    order: 1;
-  }
+  
   .mobile_blocker{
     display: block;
     order: 2;
@@ -705,6 +727,9 @@ header {
       background: #fff;
       border-radius: 5px;
       box-shadow: $shadow;
+      .phone{
+        display: block !important;
+      }
     }
   }
 }
@@ -712,12 +737,12 @@ header {
 @media (max-width: 768px) {
   .mobile-menu-button {
     order: 2;
-  }
+  }  
   .mobile_blocker div{
-    padding: 10px 0;
-    border-top: 1px solid #cfcfcf;
-    margin-top: 5px;
     order: 3;
+    & > *:not(.dart-btn){
+      text-align: left;
+    }
   }
   .tools_container{
     .right-tools{

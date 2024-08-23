@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
+import HandlebarUpdate from "./hbaTrigger";
 
 const partDirs = [
   'src/partials',
@@ -13,7 +14,7 @@ export default defineConfig({
   plugins: [handlebars({
       partialDirectory: partDirs,
       reloadOnPartialChange: true,
-  })],
+  }),HandlebarUpdate()],
   server: {
 
   },

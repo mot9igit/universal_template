@@ -9,6 +9,27 @@
   <div class="dart_wrapper">
     {{> header_1 }}
     <div class="dart_main">
+      <div class="breadcrumbs">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="/" itemprop="item"><span itemprop="name">Главная</span></a>
+                <meta itemprop="position" content="1">
+              </li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="info/" itemprop="item"><span itemprop="name">Информация</span></a>
+                <meta itemprop="position" content="2">
+              </li>
+              <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                <a href="info/snegoxodyi-«russkoj-mexaniki»-spasayut-zhitelej-saxalina.html" itemprop="item"><span
+                    itemprop="name">Снегоходы «Русской механики» спасают жителей Сахалина</span></a>
+                <meta itemprop="position" content="3">
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
       <section class="def-section">
         <div class="container">
           <div class="def-section__header">
@@ -17,11 +38,15 @@
         </div>
         <div class="container">
           <div class="dart-content-block">
+            <h3>Список страниц</h3>
             <ul>
               <li><a href="pages/home.html">Главная</a></li>
               <li><a href="pages/category.html">Категория</a></li>
               <li><a href="pages/product_card.html">Товар</a></li>
             </ul>
+            <h3>Модальные окна</h3>
+            <p>Для вызова модально окна необходимо прописать два атрибута: <b>data-dart-modal</b> - триггерующий атрибут, вызывающий addEventListener, <b>data-dart-target</b> - атрибут цели, содержащий id модального окна без символа "#".</p>
+            <a href="#" data-dart-modal data-dart-target="getcatalog" class="dart-btn dart-btn-primary">Открыть модальное окно</a>
           </div>
         </div>
       </section>

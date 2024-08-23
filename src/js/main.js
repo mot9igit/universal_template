@@ -1,4 +1,115 @@
+const dartModal = {
+  options: {
+    trigger: "[data-dart-modal]",
+    target: "dartTarget",
+    activeClass: "show",
+    modals: ".dart-modal",
+    overlay: ".dart-modal-overlay",
+    close: ".dart-modal-close",
+    scrollPosition: 0
+  },
+  initialize: function(){
+    const dartModals = document.querySelectorAll(this.options.trigger);
+    // open
+    for(let i = 0; i < dartModals.length; i++){
+      dartModals[i].addEventListener('click', (e) => {
+        e.preventDefault()
+        dartModal.closeAll()
+        const target = e.target.dataset[dartModal.options.target]
+        const targetModal = document.querySelector(".dart-modal#" + target)
+        if (targetModal !== null) {
+          dartModal.modalOpen(targetModal)
+        }else{
+          dartModal.log("Модальное окно с ID " + target + " не найдено!")
+        }
+      })
+    }
+    // overlay click
+    const dartOverlays = document.querySelectorAll(this.options.overlay);
+    // close
+    for(let i = 0; i < dartOverlays.length; i++){
+      dartOverlays[i].addEventListener('click', (e) => {
+        e.preventDefault()
+        const parentModal = dartModal.closest(e.target, dartModal.options.modals)
+        if(parentModal){
+          dartModal.modalClose(parentModal)
+        }
+      })
+    }
+    // overlay click
+    const dartCloses = document.querySelectorAll(this.options.close);
+    // close
+    for(let i = 0; i < dartCloses.length; i++){
+      dartCloses[i].addEventListener('click', (e) => {
+        e.preventDefault()
+        const parentModal = dartModal.closest(e.target, dartModal.options.modals)
+        if(parentModal){
+          dartModal.modalClose(parentModal)
+        }
+      })
+    }
+  },
+  closest: function (el, cls) {
+    while ((el = el.parentElement) && !el.matches(cls));
+    return el;
+  },
+  modalOpen: function(object){
+    object.classList.add(dartModal.options.activeClass)
+    this.fixBody()
+  },
+  modalClose: function(object){
+    object.classList.remove(dartModal.options.activeClass)
+    const dartModals = document.querySelectorAll(this.options.modals + '.' + this.options.activeClass);
+    if(!dartModals.length){
+      dartModal.unfixBody()
+    }
+  },
+  closeAll: function(){
+    const dartModals = document.querySelectorAll(this.options.modals);
+    for(let i = 0; i < dartModals.length; i++){
+      dartModals[i].classList.remove(dartModal.options.activeClass)
+    }
+  },
+  fixBody: function(){
+    let html = document.documentElement;
+    dartModal.options.scrollPosition = window.pageYOffset;
+    html.style.top = -dartModal.options.scrollPosition + "px";
+    html.classList.add("dart-modal-active");
+    let marginSize = window.innerWidth - html.clientWidth;
+    if (marginSize) {
+        html.style.marginRight = marginSize + "px";
+    }
+  },
+  unfixBody: function(){
+    let html = document.documentElement;
+    html.classList.remove("dart-modal-active");
+    window.scrollTo(0, dartModal.options.scrollPosition);
+    html.style.top = "";
+    html.style.marginRight = "";
+  },
+  log: function(text){
+    console.log("DART MODAL: " + text)
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function(){
+  // Модальные окна
+  dartModal.initialize()
+
+  const radios = document.querySelectorAll(".form_radio input[name='radio-lead']")
+  for(let i = 0; i < radios.length; i++){
+    radios[i].addEventListener('change', (e) => {
+      const wrap = document.querySelector(".lead-view-block")
+      wrap.style.display = "block"
+      const elems = document.querySelectorAll(".lead-view")
+      for(let i = 0; i < elems.length; i++){
+        elems[i].style.display = "none"
+      }
+      const elem = document.querySelector(".lead-view-" + e.target.value)
+      elem.style.display = "block"
+    })
+  }
+
   $(".catalog_menu:not(.main) > a").click(function(e) {
     e.preventDefault();
     $(this).closest('.catalog_menu').toggleClass('active');
@@ -116,4 +227,23 @@ document.addEventListener('DOMContentLoaded', function(){
     })      
   }
 
+  // swiper gallery
+  const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
+    slidesPerView: 4,
+    spaceBetween: 15,                                  
+  }) 
+  const swiper = new Swiper('.swiper_gallery', {
+    loop: true,         
+    spaceBetween: 15,                
+    autoplay: {                         
+        delay: 2000,  
+    },                   
+    navigation: {                       
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {                       //added
+      swiper: swiper_thumbnail,   //added
+    }
+  })
 })

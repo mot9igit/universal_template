@@ -1,0 +1,119 @@
+.dart-modal-active{
+  position: fixed;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.dart-modal{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;  
+  z-index: 99;
+  &.show{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: 1;
+    transition: opacity .2s ease;
+  }
+  .dart-modal-wrap{
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  .dart-modal-overlay{
+    background: rgba(0,0,0,.25);
+    position: absolute;    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1;
+  }
+  &.dart-modal-small .dart-modal-content{
+    max-width: 600px;
+  }
+  .dart-modal-content{
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px 30px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 1000px;
+    z-index: 2;
+    &.dart-modal-content-with-mockup{
+      background-position: top right;
+      background-repeat: no-repeat;
+    }
+  }
+  .dart-modal-close{
+    width: 30px;
+    height: 30px;
+    background: #cfcfcf;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 15px;
+    right: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: .8;
+    transition: all .2s ease;
+    &:hover{
+      opacity: 1;
+      transition: all .2s ease;
+    }
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      background: #343434;
+      width: 15px;
+      height: 1px;
+    }
+    &::before{
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after{
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+  .dart-modal-content-wrap{
+    position: relative;
+    padding-right: 40px;
+    .h2{
+      font-weight: bold;
+    }
+    .mockup{
+      position: absolute;
+      right: -40px;
+      top: 0;
+    }
+  }
+}

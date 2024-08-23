@@ -51,6 +51,9 @@ footer {
         margin: 15px 0 0 0;
         li {
           display: block;
+          & + li{
+            margin-top: 5px;
+          }
           a {
             color: #fff;
             text-decoration: none;

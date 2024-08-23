@@ -49,7 +49,10 @@ body {
 	height: auto !important;
 	background: #FCFCFC;
   font-family: $font-stack;
-	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: 'liga';
 	&.loading .preloader{
 		display: block;
 		position: fixed;
@@ -297,14 +300,13 @@ h2, .h2{
 
 h3, .h3{
 	display: block;
-	margin-top: 40px;
 	margin-bottom: 16px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 25px;
-	line-height: 29px;
+	line-height: 1.3;
 	letter-spacing: 0.0025em;
-	color: #282828;
+	color: $secondary-color;
 }
 
 h4, .h4{
@@ -326,14 +328,6 @@ ol{
 	letter-spacing: 0.5px;
 	color: $secondary-color;
 }
-
-ol,
-ul{
-	li{
-		padding: 7px 0;
-	}
-}
-
 blockquote{
 	font-style: normal;
 	font-weight: 400;
@@ -716,7 +710,7 @@ ul{
 		overflow-x: scroll;
 		white-space: nowrap;
 		margin: 0;
-		padding: 0;
+		padding: 0 15px;
 		&.mobile_scroll_block_300 > * {
 			display: inline-block;
 			vertical-align: top;
