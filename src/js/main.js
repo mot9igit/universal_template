@@ -15,7 +15,11 @@ const dartModal = {
       dartModals[i].addEventListener('click', (e) => {
         e.preventDefault()
         dartModal.closeAll()
-        const target = e.target.dataset[dartModal.options.target]
+        let parent = e.target
+        if(!e.target.dataset[dartModal.options.target]){
+          parent = dartModal.closest(e.target, dartModal.options.trigger)
+        }
+        const target = parent.dataset[dartModal.options.target]
         const targetModal = document.querySelector(".dart-modal#" + target)
         if (targetModal !== null) {
           dartModal.modalOpen(targetModal)
