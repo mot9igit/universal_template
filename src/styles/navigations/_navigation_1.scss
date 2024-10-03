@@ -362,6 +362,9 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  &__mobile{
+    display: none;
+  }
   .item {
     width: 50%;
     margin-bottom: 24px;
@@ -399,28 +402,35 @@
     display: block;
     pointer-events: all;
     background: rgba(0, 0, 0, 0.6);
-    &::after{
-      content: "";
-      width: 40px;
-      height: 1px;
-      display: inline-block;
+    .mobile-menu__close{
       position: absolute;
-      right: 15px;
-      top: 30px;
-      background: #fff;
-      transform: rotate(45deg);
-    }
-    &::before{
-      content: "";
-      width: 40px;
-      height: 1px;
+      z-index: 3;
+      right: 25px;
+      top: 0;
       display: inline-block;
-      position: absolute;
-      right: 15px;
-      top: 30px;
-      background: #fff;
-      transform: rotate(-45deg);
-    }
+      &::after{
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        background: #343434;
+        transform: rotate(45deg);
+      }
+      &::before{
+        content: "";
+        width: 20px;
+        height: 1px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 30px;
+        background: #343434;
+        transform: rotate(-45deg);
+      }
+    }    
     .mobile-menu__wrap {
       transform: translate(0%);
     }
@@ -428,15 +438,18 @@
   &__wrap {
     height: 100dvh;
     background: #FFF;
-    border-radius: 0 15px 15px 0;
-    width: 70%;
+    border-radius: 0 0 0 0;
+    width: 100%;
     position: fixed;
     z-index: 2;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     left: 0%;
     transform: translate(-100%);
-    padding: 24px 16px;
+    padding: 54px 16px 24px 16px;
+    .dart-catalog-menu{
+      padding: 0;
+    }
   }
   &__profile {
     display: flex;
@@ -487,7 +500,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 10px;
-    a {
+    a, span {
       text-decoration: none;
       display: block;
       padding: 10px 0;
@@ -597,7 +610,7 @@
         content: "\e91d";
         font-family: 'icomoon' !important;
         position: absolute;
-        right: -25px;
+        right: -12px;
         font-size: 18px;
         transform: rotate(90deg);
         z-index: 3;
@@ -610,6 +623,7 @@
     align-items: center;
     gap: 10px;
     min-height: 45px;
+    color: #343434;
     transition: all 0.5s;
     transform: scale(1);
     text-decoration: none;
@@ -629,7 +643,7 @@
       content: "\e91d";
       font-family: 'icomoon' !important;
       position: absolute;
-      right: -25px;
+      right: -12px;
       font-size: 18px;
       -webkit-transition: all 0.3s;
       transition: all 0.3s;

@@ -19,6 +19,31 @@
   min-height: 100%;
   -webkit-overflow-scrolling: touch;  
   z-index: 99;
+  &.dart-modal-static{
+    position: relative;
+    display: block;
+    opacity: 1;
+    padding: 30px 0;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;    
+      background: rgba(255, 255, 255, .6);
+      z-index: 2;
+    }
+    .dart-modal-content{
+      max-width: 100%;
+      background: transparent;
+      position: relative;
+      z-index: 3;
+      .dart-big-block{
+        width: 100%;
+      }
+    }
+  }
   &.show{
     display: flex;
     align-items: center;
@@ -64,6 +89,9 @@
     &.dart-modal-content-with-mockup{
       background-position: top right;
       background-repeat: no-repeat;
+    }
+    .dart-big-block{
+      width: 100%;
     }
   }
   .dart-modal-close{
@@ -114,6 +142,63 @@
       position: absolute;
       right: -40px;
       top: 0;
+    }
+  }
+}
+
+.modal-content{
+  background: #fff;
+  border-radius: 5px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 1000px;
+  z-index: 2;
+  .modal-footer{
+    border-top: none;
+  }
+  .modal-header{
+    border-bottom: none;
+  }
+  .close{
+    width: 30px;
+    height: 30px;
+    background: #cfcfcf;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    right: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-indent: -9999px;
+    overflow: hidden;
+    opacity: .8;
+    transition: all .2s ease;
+    &:hover{
+      opacity: 1;
+      transition: all .2s ease;
+    }
+    &::before,
+    &::after{
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      background: #343434;
+      width: 15px;
+      height: 1px;
+    }
+    &::before{
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+    &::after{
+      transform: translate(-50%, -50%) rotate(-45deg);
     }
   }
 }

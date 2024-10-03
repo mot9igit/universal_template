@@ -99,6 +99,96 @@ const dartModal = {
 document.addEventListener('DOMContentLoaded', function(){
   // Модальные окна
   dartModal.initialize()
+  // кнопка
+  const btns = () => {
+    const elem = document.querySelector('.price_btns');
+    const sub_elem = document.querySelector('.calc_button');
+  
+    if(elem){
+      const posTop = elem.getBoundingClientRect().top;    
+      // Блок достиг верхней границы экрана (или выше)
+      if(sub_elem){
+        sub_elem.classList.toggle('calc_button__active', posTop <= 0);
+      }      
+    }  
+  }
+  // анимация
+  const scrollElements = document.querySelectorAll(".js-scroll");
+  const throttleCount = document.getElementById('throttle-count');
+  const scrollCount = document.getElementById('scroll-count');
+
+  var throttleTimer;
+
+  const throttle = (callback, time) => {
+    if (throttleTimer) return;
+
+    throttleTimer = true;
+    setTimeout(() => {
+      callback();
+      throttleTimer = false;
+    }, time);
+  }
+
+  const elementInView = (el) => {
+    var targetPosition = {
+      top: window.pageYOffset + el.getBoundingClientRect().top,
+      left: window.pageXOffset + el.getBoundingClientRect().left,
+      right: window.pageXOffset + el.getBoundingClientRect().right,
+      bottom: window.pageYOffset + el.getBoundingClientRect().bottom
+    },
+    // Получаем позиции окна
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+    if (targetPosition.bottom > windowPosition.top &&
+      targetPosition.top < windowPosition.bottom && 
+      targetPosition.right > windowPosition.left &&
+      targetPosition.left < windowPosition.right) {
+      return true
+    } else {
+      return false
+    };
+  };
+
+  const elementOutofView = (el) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    return (
+      elementTop > (window.innerHeight || document.documentElement.clientHeight)
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+  };
+
+  const hideScrollElement = (element) => {
+    element.classList.remove("scrolled");
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el)) {
+        displayScrollElement(el);
+      } else {
+        hideScrollElement(el)
+      }
+    })
+  }
+  var timer=0;
+  var count=0;
+  var scroll = 0;
+
+  window.addEventListener("scroll", () => { 
+    throttle(() => {
+      handleScrollAnimation();
+      btns();
+    }, 250);
+  });
+
 
   const radios = document.querySelectorAll(".form_radio input[name='radio-lead']")
   for(let i = 0; i < radios.length; i++){
@@ -108,9 +198,13 @@ document.addEventListener('DOMContentLoaded', function(){
       const elems = document.querySelectorAll(".lead-view")
       for(let i = 0; i < elems.length; i++){
         elems[i].style.display = "none"
+        const input = elems[i].querySelector("input")
+        input.required = false
       }
       const elem = document.querySelector(".lead-view-" + e.target.value)
       elem.style.display = "block"
+      const input = elem.querySelector("input")
+      input.attributes["required"] = ""
     })
   }
 
@@ -156,10 +250,15 @@ document.addEventListener('DOMContentLoaded', function(){
 
   const menu_toggler = document.querySelector('.nav-dart-menu');
   const mobile_menu = document.querySelector('.mobile-menu');
+  const mobile_menu_closer = document.querySelector('.mobile-menu .mobile-menu__close');
   const body = document.querySelector('body');
 
   if(menu_toggler && mobile_menu){
     menu_toggler.addEventListener('click', () => {
+      mobile_menu.classList.toggle('show');
+      body.style.overflow = "hidden"      
+    })
+    mobile_menu_closer.addEventListener('click', () => {
       mobile_menu.classList.toggle('show');
       body.style.overflow = "hidden"      
     })
@@ -231,6 +330,18 @@ document.addEventListener('DOMContentLoaded', function(){
     })      
   }
 
+  $(".tagster .navi span").click(function(e){
+    e.preventDefault();
+    $(this).closest(".tagster").toggleClass("open")
+    if($(this).closest(".tagster").hasClass("open")){
+      $(".tagster .navi span.open").hide();
+      $(".tagster .navi span.close").show();
+    }else{
+      $(".tagster .navi span.open").show();
+      $(".tagster .navi span.close").hide();
+    }
+  })
+
   // swiper gallery
   const swiper_thumbnail = new Swiper(".swiper_thumbnail", {
     slidesPerView: 4,
@@ -248,6 +359,17 @@ document.addEventListener('DOMContentLoaded', function(){
     },
     thumbs: {                       //added
       swiper: swiper_thumbnail,   //added
+    }
+  })
+  const swiper_mobile = new Swiper('.mobile_slider', {    
+    loop: true,         
+    spaceBetween: 15,                
+    autoplay: {                         
+        delay: 2000,  
+    },                   
+    navigation: {                       
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     }
   })
 })
